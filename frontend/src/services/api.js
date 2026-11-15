@@ -1,5 +1,7 @@
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || '')
+const configuredApiBaseUrl = (import.meta.env.VITE_API_BASE_URL || '').trim()
+const productionApiBaseUrl = 'https://adapting-farms-with-nasa-data.onrender.com'
+const apiBaseUrl = (configuredApiBaseUrl || (import.meta.env.PROD ? productionApiBaseUrl : ''))
   .trim()
   .replace(/\/+$/, '')
 
