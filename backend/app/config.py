@@ -11,7 +11,15 @@ class Settings(BaseSettings):
     api_port: int = 8000
     cache_dir: str = "backend/cache"
     cache_ttl_seconds: int = 3600
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:4173,http://127.0.0.1:4173"
+    cors_origins: str = (
+        "https://agriguard-nasa.vercel.app,"
+        "https://agriguard-ai-sigma.vercel.app,"
+        "https://agriguard-nasa-git-main-udhayakumar-ns-projects.vercel.app,"
+        "http://localhost:5173,"
+        "http://127.0.0.1:5173,"
+        "http://localhost:4173,"
+        "http://127.0.0.1:4173"
+    )
     firms_map_key: str = ""
     earthdata_username: str = ""
     earthdata_password: str = ""

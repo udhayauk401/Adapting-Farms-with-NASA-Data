@@ -75,7 +75,7 @@ The web application uses NASA POWER as its sole NASA data integration. Daily poi
 | `APP_ENV` | Backend environment name |
 | `API_HOST`, `API_PORT` | Local API bind address |
 | `CACHE_DIR`, `CACHE_TTL_SECONDS` | Local response-cache location and default lifetime |
-| `CORS_ORIGINS` | Comma-separated browser origins permitted to call the backend |
+| `CORS_ORIGINS` | Comma-separated browser origins permitted to call the backend; defaults include the deployed Vercel domains and local Vite origins |
 
 ## NASA data access
 
